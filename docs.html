@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disk Scheduling Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+    <div class="container">
+        <h1>Disk Scheduling Algorithms</h1>
+        <label for="algorithm">Select Algorithm:</label>
+        <select id="algorithm">
+            <option value="fcfs">FCFS</option>
+            <option value="sstf">SSTF</option>
+            <option value="scan">SCAN</option>
+            <option value="look">LOOK</option>
+            <option value="cScan">C-SCAN</option>
+            <option value="cLook">C-LOOK</option>
+        </select>
+
+        <label for="no_of_request">Number of Request String:</label>
+        <input type="number" id="no_of_request" required>
+
+        <label for="requestString">Request String (comma-separated):</label>
+        <input type="text" id="requestString" placeholder="Enter Request String(Comma-separated)"required>
+
+        <label for="init">Current Head Position:</label>
+        <input type="number" id="init" required>
+
+        <label for="max_c">Maximum Cylinder:</label>
+        <input type="number" id="max_c">
+
+        <label for="direction">Direction:</label>
+        <select id="direction">
+            <option value="0">Left</option>
+            <option value="1">Right</option>
+        </select>
+
+        <div class="button-container">
+            <button onclick="runAlgorithms()">Run</button>
+        </div>
+        
+
+        <!-- Result paragraphs for each algorithm -->
+        <p id="fcfsResult"></p>
+        <p id="sstfResult"></p>
+        <p id="scanResult"></p>
+        <p id="lookResult"></p>
+        <p id="cScanResult"></p>
+        <p id="cLookResult"></p>
+
+        <!-- Canvas for displaying the chart -->
+
+
+        <!-- Result paragraph for overall result -->
+        <p id="result"></p>
+        <div class="canvas-container">
+            <canvas id="algorithmChart" width="800" height="400"></canvas>
+        </div>        
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

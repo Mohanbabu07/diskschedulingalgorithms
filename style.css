@@ -1,0 +1,230 @@
+/* Reset some default styles */
+body, h1, h2, p, select, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 18px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the h1 element */
+}
+
+label {
+    width: 100%;
+    display: block;
+    margin-bottom: 9px;
+    padding: 10px;
+}
+
+input {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+select {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    }
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+canvas {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.canvas-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#algorithmChart {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style individual result paragraphs */
+#fcfsResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: #ffcccc; /* Light red background */
+}
+
+#sstfResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: #72a6d4; /* Light green background */
+}
+
+#scanResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgb(245, 255, 204); /* Light blue background */
+}
+
+#lookResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: #ccffff; /* Light yellow background */
+    
+}
+
+#cScanResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: #8f619b; /* Light purple background */
+}
+
+#cLookResult {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    background-color: #ebe155; /* Light cyan background */
+}
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        font-weight: bold; /* Make all text within the container bold */
+    }
+
+    label {
+        margin-bottom: 10px; /* Reduce the margin for labels */
+    }
+}
+/* styles.css */
+.wrapper span {
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #18191f;
+	box-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+	animation: animate 3s linear infinite;
+}
+.wrapper span:nth-child(1) {
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2) {
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrapper span:nth-child(3) {
+	left: 20%;
+	animation-delay: 2s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+.wrapper span:nth-child(4) {
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrapper span:nth-child(5) {
+	left: 40%;
+	animation-delay: 1s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;}
+.wrapper span:nth-child(6) {
+	left: 50%;
+	animation-delay: 7s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+.wrapper span:nth-child(7) {
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+    
+}
+.wrapper span:nth-child(8) {
+	left: 70%;
+	animation-delay: 8s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+.wrapper span:nth-child(9) {
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrapper span:nth-child(10) {
+	left: 90%;
+	animation-delay: 4s;
+    box-shadow: 0 0 50px #ba181b, 0 0 100px #ba181b, 0 0 150px #ba181b, 0 0 200px #ba181b;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80% {
+		opacity: .7;
+	}
+	100% {
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
+}
